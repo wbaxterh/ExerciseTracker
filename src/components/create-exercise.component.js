@@ -80,7 +80,7 @@ export default class CreateExercise  extends Component{
           //submit to the database
         console.log(exercise);
 
-        axios.post("http://34.224.192.188:5000/exercises/add", exercise)
+        axios.post("http://50.16.77.250:5000/exercises/add", exercise)
         .then(res => console.log(res.data));
 
          window.location = "/";

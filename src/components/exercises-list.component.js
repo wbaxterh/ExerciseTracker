@@ -27,7 +27,7 @@ export default class ExercisesList extends Component{
     }
     //methods
     componentDidMount(){
-        axios.get("http://34.224.192.188:5000/exercises/")
+        axios.get("http://50.16.77.250:5000/exercises/")
         .then(res => {
             this.setState({
                 exercises: res.data
@@ -42,7 +42,7 @@ export default class ExercisesList extends Component{
 
     //delete method
     deleteExercise(id){
-        axios.delete("http://34.224.192.188:5000/exercises/" + id)
+        axios.delete("http://50.16.77.250:5000/exercises/" + id)
         .then(res => console.log(res.data));
         this.setState({
             //filter the array of exercises -> return every element that 
